@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Wisielec</string>
+    <string name="hi_try_to_guess_a_randomized_word_good_luck">Hi! Try to guess a randomized word! Good luck!</string>
+    <string name="has_o">HASŁO</string>
+    <string name="give_a_letter">Give a letter:</string>
+    <string name="check">CHECK</string>
+    <string name="new_game">NEW GAME</string>
+    <string name="todo">TODO</string>
+    <string-array name="words">
+        <item>komputer</item>
+        <item>zgadywanka</item>
+        <item>wynik</item>
+        <item>kolorowanka</item>
+        <item>pluszak</item>
+        <item>białko</item>
+        <item>zeszyt</item>
+        <item>lampka</item>
+        <item>kanapka</item>
+        <item>budynek</item>
+        <item>klawiatura</item>
+        <item>brązowy</item>
+        <item>algorytm</item>
+        <item>ekierka</item>
+        <item>samoprzylepny</item>
+        <item>termos</item>
+        <item>netflix</item>
+        <item>youtube</item>
+        <item>ceramika</item>
+        <item>półmetek</item>
+        <item>gżegżółka</item>
+        <item>pisarz</item>
+        <item>indukcja</item>
+        <item>koszykówka</item>
+        <item>samochód</item>
+        <item>laptop</item>
+        <item>serwerownia</item>
+        <item>technologia</item>
+        <item>piwowarstwo</item>
+        <item>magiczny</item>
+        <item>twierdza</item>
+        <item>antyrządowy</item>
+        <item>szczepionka</item>
+        <item>mobilność</item>
+        <item>azjatycki</item>
+        <item>bałtyk</item>
+        <item>księżniczka</item>
+        <item>źrebię</item>
+        <item>koc</item>
+        <item>miś</item>
+        <item>celność</item>
+        <item>gluten</item>
+        <item>drewniany</item>
+        <item>emocjonalnie</item>
+        <item>faktura</item>
+        <item>fabryka</item>
+        <item>rzeka</item>
+        <item>antena</item>
+        <item>wychowanie</item>
+        <item>fryzjer</item>
+        <item>beżowy</item>
+        <item>fioletowy</item>
+        <item>fundament</item>
+        <item>gorączka</item>
+        <item>gorzki</item>
+        <item>grafit</item>
+        <item>listopad</item>
+        <item>wyspa</item>
+        <item>elektryczny</item>
+        <item>szkoła</item>
+        <item>hamburger</item>
+        <item>kilkukrotny</item>
+        <item>galeria</item>
+        <item>sztuka</item>
+        <item>lektor</item>
+        <item>wywiad</item>
+        <item>samozwańczy</item>
+        <item>grecki</item>
+        <item>zjednoczenie</item>
+        <item>ofensywa</item>
+        <item>niespodzianka</item>
+        <item>kleszcz</item>
+        <item>nieodpowiedzialny</item>
+    </string-array>
+</resources>
