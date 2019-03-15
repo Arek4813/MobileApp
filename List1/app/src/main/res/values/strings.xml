@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyFirstLabApp</string>
+    <string name="hi_try_to_guess_the_number_which_i_ve_selected_for_you_from_1_to_451_as_soon_as_possible_i_will_give_you_some_tips_let_s_go">
+        Hi! Try to guess the number which I\'ve selected for you from 1 to 451 AS SOON AS POSSIBLE! I will give you some
+        tips ;) Let\'s go!
+    </string>
+    <string name="give_number">Give number</string>
+    <string name="your_predicted_number">Your predicted number:</string>
+    <string name="check">CHECK!</string>
+    <string name="change_font">CHANGE FONT</string>
+    <string name="new_game">NEW GAME</string>
+</resources>
