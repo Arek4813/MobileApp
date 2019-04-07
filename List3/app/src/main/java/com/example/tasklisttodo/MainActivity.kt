@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
     var tasksList = ArrayList<SimpleTask>()
     var imagesList = ArrayList<Int>()
     var importanceList = ArrayList<String>()
-    var timeList = ArrayList<String>()
     var path = 0
     var ctrCat = false
     var ctrTime = false
@@ -29,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        hideKeyboard()
         setContentView(R.layout.activity_main)
         categoryGraphic.setImageResource(R.drawable.people)
 
@@ -157,45 +157,13 @@ class MainActivity : AppCompatActivity() {
     fun taskAdder() {
         var oneTextTask = writeTaskETP.text
         writeTaskETP.setText("")
-        var timer = timer()
+        var timer = Date().toLocaleString()
         var task = SimpleTask(oneTextTask.toString(), importanceChoicer.selectedItem.toString(), imagesList[path], timer)
         tasksList.add(task)
         println(tasksList)
         hideKeyboard()
     }
 
-    fun timer(): String {
-        var Ihours = Date().hours
-        var hours = ""
-        var Imin = Date().minutes
-        var min = ""
-        var Isec = Date().seconds
-        var sec = ""
-
-        if(Ihours<10) {
-            hours ="0"+Ihours
-        }
-        else {
-            hours = Ihours.toString()
-        }
-
-        if(Imin<10) {
-            min ="0"+Imin
-        }
-        else {
-            min = Imin.toString()
-        }
-
-        if(Isec<10) {
-            sec ="0"+Isec
-        }
-        else {
-            sec = Isec.toString()
-        }
-
-        var timer = "" + Date().day +"/" + (Date().month+1)+ "/" + (Date().year+1900) + " " + hours +":" + min + ":" + sec
-        return timer
-    }
 
     fun Fragment.hideKeyboard() {
         view?.let { activity?.hideKeyboard(it) }

@@ -41,7 +41,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="20dp">
         <ListView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="360dp"
                 android:id="@+id/LVPort"
         />
     </LinearLayout>
@@ -69,7 +69,8 @@
                     android:id="@+id/GraphicSeekBar"
                     app:layout_constraintStart_toEndOf="@+id/categoryGraphic"
                     app:layout_constraintBottom_toTopOf="@+id/writeTaskETP" android:layout_marginStart="5dp"
-            />
+                    android:progressBackgroundTint="@android:color/black"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"/>
             <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/importanceChoicer" android:layout_weight="1"
@@ -84,7 +85,6 @@
                     android:layout_width="201dp"
                     android:layout_height="match_parent"
                     android:inputType="textPersonName"
-                    android:ems="10"
                     android:id="@+id/writeTaskETP"
                     android:hint="Add your task..."
                     android:layout_marginStart="20dp"
