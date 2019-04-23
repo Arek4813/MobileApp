@@ -1,14 +1,11 @@
 package com.example.galleryapp
 
-import android.app.Activity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import com.example.galleryapp.R.layout.activity_main
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.photo_view.*
 import java.util.ArrayList
 
 
@@ -102,6 +99,20 @@ class MainActivity : AppCompatActivity() {
                 PictureLists[positioner!!].Rating = rating!!
             }
         }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        if(PictureLists!=null) {
+            outState.putParcelableArrayList("list", PictureLists)
+        }
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState != null) {
+            PictureLists=savedInstanceState.getParcelableArrayList("list")
+        };
     }
 
 }
